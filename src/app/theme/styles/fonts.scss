@@ -1,0 +1,80 @@
+@import "colors";
+@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+@font-face {
+  font-family: 'Cerebri';
+  src: url('../../../assets/Cerebri.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$light  : 300;
+$medium : 500;
+$semi   : 600;
+$bold   : 700;
+
+.fw-light {
+  font-weight: $light;
+}
+.fw-medium {
+  font-weight: $medium;
+}
+.fw-semi {
+  font-weight: $semi;
+}
+.fw-bold {
+  font-weight: $bold;
+}
+.text-blue {
+  color: $primary_color;
+}
+.text-dark {
+  color: $secondary_color;
+}
+.text-white {
+  color: white;
+}
+
+.heading-one{
+  font-family: 'Amiri', serif !important;
+  font-weight: 400;
+  font-size: 48px;
+  padding: 0;
+  margin: 0;
+}
+
+.heading-two{
+  font-family: 'Amiri', serif !important;
+  font-weight: 400;
+  font-size: 36px;
+}
+
+.heading-three{
+  font-size: 28px;
+  font-family: 'Cerebri', serif !important;
+  font-weight: 400;
+}
+
+.heading-four{
+  font-size: 20px;
+  font-family: 'Cerebri', serif !important;
+  font-weight: 400;
+}
+
+.body-text{
+  font-size: 16px;
+  font-family: 'Cerebri', serif !important;
+  font-weight: 400;
+}
+
+.button-text{
+  font-size: 14px;
+  font-family: 'Cerebri', serif !important;
+  font-weight: 400;
+}
+
+
+@for $index from 10 through 100 {
+  .fs-#{$index} {
+    font-size: 0px + $index;
+}
+}

@@ -1,0 +1,30 @@
+@import "../../styles/styles";
+.header-container{
+    width: 100vw;
+    height: 100px;
+    background: transparent;
+    border-bottom: 1px solid rgba($secondary_color, 0.1);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    .logo-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        .logo{
+            width: 80px;
+            user-select: none;
+            margin-top: -10px;
+        }
+        .logo-text{
+            font-size: 11px;
+            margin-top: -11px;
+            font-weight: 500;
+            font-family: 'Cerebri', serif ;
+        }
+    }
+
+}

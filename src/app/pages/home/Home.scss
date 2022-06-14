@@ -1,0 +1,8 @@
+@import "../../theme/styles/styles";
+
+.home-container{
+    width: 100vw;
+    height: 100vh;
+    padding-top: 80px;
+    background: radial-gradient(circle, $soft-gray 0%, $hard-gray 100%);
+}
