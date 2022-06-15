@@ -44,25 +44,25 @@
 @for $index from 10 through 100 {
     @if isMultiplier(2, $index){
         .h-#{$index} {
-            height: 0% + $index;
+            height: 0% + $index !important;
         }
         .h-#{$index}-vh {
-            height: 0vh + $index;
+            height: 0vh + $index !important;
         }
         .padding-#{$index} {
-            padding: 0px + $index;
+            padding: 0px + $index !important;
         }
         .padding-top-#{$index} {
-            padding-top: 0px + $index;
+            padding-top: 0px + $index !important;
         }
         .padding-bottom-#{$index} {
-            padding-bottom: 0px + $index;
+            padding-bottom: 0px + $index !important;
         }
         .padding-left-#{$index} {
-            padding-left: 0px + $index;
+            padding-left: 0px + $index !important;
         }
         .padding-right-#{$index} {
-            padding-right: 0px + $index;
+            padding-right: 0px + $index !important;
         }
     }
 }

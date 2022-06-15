@@ -7,13 +7,14 @@
     position: absolute;
     display: flex;
     align-items: center;
-    padding: 0 40px;
+    justify-content: space-between;
     .logo-container{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         position: relative;
+        cursor: pointer;
         .logo{
             width: 80px;
             user-select: none;
@@ -26,5 +27,24 @@
             font-family: 'Cerebri', serif ;
         }
     }
-
+    .header-item{
+        padding: 0 20px;
+        font-weight: 600;
+        transition: 0.4s all ease;
+        &.active{
+            color: $primary_color;
+        }
+    }
+    .header-item:hover{
+        cursor: pointer;
+        color: $primary_color;
+    }
+    .menu-item{
+        color: $secondary_color;
+        cursor: pointer;
+        transition: 0.4s ease all;
+    }
+    .menu-item:hover{
+        color: $primary_color;
+    }
 }
