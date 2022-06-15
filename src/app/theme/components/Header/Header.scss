@@ -3,21 +3,24 @@
     width: 100vw;
     height: 100px;
     background: transparent;
-    border-bottom: 1px solid rgba($secondary_color, 0.1);
-    position: absolute;
+    border-bottom: 1px solid rgba($secondary_color, 0.03);
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-left: 40px;
+    backdrop-filter: blur(2px);
     .logo-container{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         position: relative;
         cursor: pointer;
         .logo{
-            width: 5rem;
+            width: 4rem;
             user-select: none;
+            padding-bottom: 3px;
             margin-top: -10px;
         }
         .logo-text{
@@ -26,6 +29,9 @@
             font-weight: 500;
             font-family: 'Cerebri', serif ;
         }
+    }
+    .header-item:first-child{
+        padding: 0 20px 0 0;
     }
     .header-item{
         padding: 0 20px;
